@@ -1,0 +1,84 @@
+//
+//  Variables
+//
+$body--background: #29142E;
+$svg--background: #802852;
+$svg--text: yellow;
+$button--background: #CF7557;
+$one: red;
+$two: green;
+$sum: blue;
+
+
+
+//
+//  Reset default browser styles
+//
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+
+  background: $body--background;
+}
+
+
+
+//
+//  SVG element
+//
+svg {
+  background: $svg--background;
+  border-radius: 1rem;
+
+  text {
+    fill: $svg--text;
+  }
+
+  #cookie-status {
+    font-size: 2rem;
+    font-style: italic;
+    fill: $one;
+  }
+}
+
+
+
+//
+//  Controls
+//
+.ui-controls {
+  position: fixed;
+  top: 2vw;
+  right: 2vw;
+
+  button {
+    margin: 0.25rem;
+    padding: .5rem 1rem;
+
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: bold;
+
+    background: $button--background;
+    border: 0;
+    border-radius: 1rem;
+  }
+}
