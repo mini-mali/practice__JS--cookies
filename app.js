@@ -18,7 +18,11 @@ let
 
 console.log(cookieStatus);
 
-give.onclick = () => console.log('GIVE');
+give.onclick = () => {
+	console.log('GIVE');
+	document.cookie = "cookieWasEaten=true";
+	console.log('GIVE');
+};
 steal.onclick = () => console.log('STEAL');
 
 
